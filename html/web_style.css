@@ -1,0 +1,152 @@
+
+{
+	margin:0px;
+	font-family:'Arial',sans-serif;
+}
+
+/*----------Main-Header----------*/
+#main-header
+{
+	background-size:cover;
+	padding:23px;
+	text-align:right;
+	background-color: gray;
+}
+#main-header h1
+{
+	margin:0px;
+	color:white;
+	font-size:40px;
+}
+
+/*----------Main-Navbar----------*/
+#main-nav
+{
+	background:linear-gradient(45deg,brown,darkslategrey);
+	padding:5px;
+	display:flex;
+	flex-direction:row;
+}
+#main-nav a
+{
+	color:white;
+	text-decoration:none;
+	margin:8px;
+	display:inline-block;
+	padding:10px 20px;
+}
+#main-nav a.active
+{
+	background:linear-gradient(45deg,darkred,grey);
+	border-radius:10px;
+	color:white;
+}
+#main-nav a:hover
+{
+	background:linear-gradient(45deg,grey,rgb(36,147,242));
+	border-radius:10px;
+	box-shadow:0 0 10px black;
+}
+.fa
+{
+	padding-right:5px;
+}
+
+
+/*----------Main-Section----------*/
+#main-section
+{
+	text-align:center;
+	margin:15px 0px;
+}
+#main-section .main-section-article
+{
+	box-shadow:0 0 10px gray;
+	width:330px;
+	height:500px;
+	margin:5px;
+	display:inline-grid;
+	border-radius:30px 30px 30px 30px;
+	transition:all 0.5s;
+}
+#main-section .main-section-article:hover
+{
+	width:340px;
+	cursor:pointer;
+}
+.main-section-article img
+{
+	width:100%;
+}
+.main-section-article .main-section-text
+{
+	padding:10px;
+}
+
+/*----------Main-Section-News----------*/
+#main-section-news
+{
+	width:80%;
+	margin:auto;
+}
+#main-section-news .main-section-news-article
+{
+	border:2px solid gray;
+	box-shadow:0 0 10px black;
+	border-radius:30px;
+	margin:10px;
+	overflow:hidden;
+	text-align:center;
+}
+#main-section-news .main-section-news-article img
+{
+	width:500px;
+	height:300px;
+	box-shadow:0 0 10px black;
+	border-radius:20px;
+	transition:all 0.5s;
+}
+#main-section-news .main-section-news-article img:hover
+{
+	transform:scale(1.2,1.2);
+}
+#main-section-news .main-section-news-article h2
+{
+	background-color:gray;
+	color:white;
+	margin:0px;
+	padding:10px;
+}
+
+@media (max-width:600px)
+{
+	#main-nav
+	{
+		flex-direction:column;
+	}
+}
+@media (max-width:750px)
+{
+	#main-nav
+	{
+		flex-direction:column;
+	}
+	#main-section-news .main-section-news-article img
+	{
+		width:400px;
+	}
+
+}
+@media (max-width:500px)
+{
+	#main-nav
+	{
+		flex-direction:column;
+	}
+	#main-section-news .main-section-news-article img
+	{
+		width:200px;
+	}
+
+}
+
